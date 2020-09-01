@@ -22,6 +22,7 @@
 │   └── manifest.json
 ├── src (application source code)
 |   ├── Components
+|   |   ├── <b>config.js</b> (Modify endpoints/global vars here)
 |   |   ├── Source files for application
 |   ├── App.css
 |   ├── App.jsx
@@ -397,6 +398,15 @@ programs <span class="token operator">=</span> data<span class="token punctuatio
 <h4 id="full-stack-gcp-app-engine"><a href="#full-stack-hosting">Full-Stack</a>: GCP App Engine</h4>
 <h2 id="database-hosting">Database Hosting</h2>
 <p>The database is hosted through MongoDB Atlas. For information on interfacing, see the <a href="#database">database documentation</a>.</p>
+<h4 id="cluster-management">Cluster Management:</h4>
+<p><img src="https://i.imgur.com/sIy55Jv.png" alt="enter image description here"></p>
 <h2 id="full-stack-hosting">Full-Stack Hosting</h2>
 <p>The full stack application is a flask web app that is served through app engine. For information on building and deployment, see the <a href="#building-and-deploying-the-application">production deployment documentation</a>.</p>
+<h4 id="app-engine-management">App Engine Management</h4>
+<p><img src="https://i.imgur.com/yQPxvDJ.png" alt="enter image description here"></p>
+<h1 id="tools">Tools</h1>
+<h3 id="slugify"><code>slugify</code></h3>
+<pre class=" language-python"><code class="prism  language-python">slugify <span class="token operator">=</span> <span class="token keyword">lambda</span> s<span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>char <span class="token keyword">for</span> char <span class="token keyword">in</span> s<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span>  <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token keyword">if</span> char<span class="token punctuation">.</span>isalpha<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">or</span> char <span class="token operator">==</span>  <span class="token string">'-'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<h3 id="shuffle"><a href="%5Bhttps://github.com/aj8uppal/arena-frontend/blob/master/src/Components/tools.js#L1%5D(https://github.com/aj8uppal/arena-frontend/blob/master/src/Components/tools.js#L1)"><code>shuffle</code></a></h3>
 
