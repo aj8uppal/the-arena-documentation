@@ -409,4 +409,13 @@ programs <span class="token operator">=</span> data<span class="token punctuatio
 <pre class=" language-python"><code class="prism  language-python">slugify <span class="token operator">=</span> <span class="token keyword">lambda</span> s<span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span><span class="token punctuation">[</span>char <span class="token keyword">for</span> char <span class="token keyword">in</span> s<span class="token punctuation">.</span>lower<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>replace<span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">,</span>  <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token keyword">if</span> char<span class="token punctuation">.</span>isalpha<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">or</span> char <span class="token operator">==</span>  <span class="token string">'-'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="shuffle"><a href="%5Bhttps://github.com/aj8uppal/arena-frontend/blob/master/src/Components/tools.js#L1%5D(https://github.com/aj8uppal/arena-frontend/blob/master/src/Components/tools.js#L1)"><code>shuffle</code></a></h3>
+<h1 id="appendix">Appendix</h1>
+<h2 id="adding-the-slider-back">Adding the slider back</h2>
+<p>There are a few requirements for the slider component, once added back:</p>
+<ul>
+<li>Must export left and right parameters.</li>
+<li>Must not include <code>&lt;input type="range"&gt;</code> since the start and end will be static.</li>
+<li>Use the <code>&lt;EditableText /&gt;</code> component for the start and end ranges.</li>
+<li>If recreating from the codebase, pay close attention to the code for the concentric circles on hover. There is a bug that prevents moving the slider again when you are hovering over the circles.</li>
+</ul>
 
