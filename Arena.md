@@ -175,6 +175,7 @@ Do you want to <span class="token keyword">continue</span> <span class="token pu
 client <span class="token operator">=</span> pymongo<span class="token punctuation">.</span>MongoClient<span class="token punctuation">(</span><span class="token string">"mongodb+srv://db-access-user:Arena2357@cluster0.mayoh.gcp.mongodb.net/**&lt;dbname&gt;**?retryWrites=true&amp;w=majority"</span><span class="token punctuation">)</span>
 </code></pre>
 <p><sup>Note: make sure you replace <code>**dbname**</code> with the name of the designated <code>db</code>.</sup></p>
+<p>Note that the current plan for the DB is a free tier hosted locally. Please purchase a dedicated cluster ASAP, definitely once in a fully production environment.</p>
 <h2 id="structure">Structure</h2>
 <p>There are 3 tables in the DB: <a href="#programs"><code>programs</code></a>, <a href="#providers"><code>providers</code></a>, <a href="#jobs"><code>jobs</code></a>:</p>
 <h3 id="programs"><code>programs</code></h3>
